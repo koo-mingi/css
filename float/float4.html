@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 배경색 /글자색상 / margin */
+      span {
+        /* 인라인 요소라 float를 주어도 정렬에서는 별 차이를 안 보인다. 
+            하지만, 원래는 줄 수 없었던 width와 height를 줄 수 있게 된다.
+            즉, block요소를 안 주어도 영역을 가질 수가 있다.*/
+        color: tomato;
+        background-color: turquoise;
+        margin: 5px;
+        float: left;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+  </body>
+</html>

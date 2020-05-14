@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 12px;
+      }
+      body {
+        font-size: 13px;
+      }
+      .box {
+        background-color: burlywood;
+        margin-bottom: 10px;
+      }
+      .box_px {
+        width: 160px;
+        height: 160px;
+      }
+      .box_em {
+        width: 10em;
+        height: 10em;
+      }
+      .box_rem {
+        width: 10rem;
+        height: 10rem;
+      }
+      p {
+        background-color: cadetblue;
+        font-size: 1em;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 기본 문법</h1>
+    <h2>단위</h2>
+    <!--/* 클래스는 한 칸 띄어서 줄 수가 있다 */ -->
+    <!--
+        px : 고정값(화면 해상도에 영향을 받음)
+        % : 부모 요소에 영향을 받음
+        em : 자기 자신의 font size에 영향을 받음
+        rem : 조상 태그의 font size에 영향을 받음
+        vw, vh : viewport(브라우저 화면 크기) 기준으로 width, height 설정
+    -->
+    <div class="wrapper">
+      <div class="box box_px">PX</div>
+      <div class="box box_em">EM</div>
+      <div class="box box_rem">REM</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+      voluptatem exercitationem. Numquam quae, deserunt explicabo enim error sit
+      sed dolorem qui quos, officiis modi consectetur nam accusamus, obcaecati
+      perspiciatis pariatur optio veritatis doloremque et quam? Molestiae
+      maxime, excepturi enim tempora repellat debitis corporis exercitationem
+      corrupti iste asperiores magni! Illo similique excepturi, maiores atque
+      veniam labore officia officiis iusto vitae quibusdam incidunt architecto!
+      Veniam, fuga laboriosam qui architecto repellendus ab, incidunt libero
+      porro voluptatibus nemo molestiae possimus deserunt eveniet. Architecto
+      iste reprehenderit praesentium inventore tempore fugit aperiam. Ullam eum,
+      eaque eligendi deleniti amet ipsa. Dicta molestiae quidem totam iste illum
+      quae?
+    </p>
+  </body>
+</html>
