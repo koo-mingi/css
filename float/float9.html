@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0 auto; /* 화면 가운데에 정렬 시킴*/
+        padding: 0;
+      }
+      header {
+        width: 960px;
+        background-color: #ccc;
+        line-height: 60px; /* 이거 해주면 세로로 가운데 정렬 됨*/
+      }
+      h1 {
+        float: left;
+      }
+      ul {
+        float: right;
+      }
+      li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="clearfix">
+      <h1><a href="">Logo</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">SiteMap</a></li>
+          <li><a href="#">Location</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

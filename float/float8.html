@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .list {
+        background-color: #333;
+      }
+      .list li {
+        list-style-type: none;
+        float: left;
+        /* display: inline-block; */
+      }
+      a {
+        color: white;
+        padding: 14px 16px;
+        display: inline-block;
+        text-decoration: none;
+      }
+      a:hover {
+        color: blueviolet;
+        background-color: red;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="list clearfix">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">SiteMap</a></li>
+        <li><a href="#">Location</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
