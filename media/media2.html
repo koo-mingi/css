@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background-color: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      /* 수평 구성 */
+      .flexbg {
+        display: flex;
+      }
+      /* 위치 순서 정하기 */
+      .flexbg main {
+        order: 2;
+        background-color: white;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 25px;
+        color: white;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: #3498db;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: #34495e;
+      }
+      /* 태블릿 화면 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .flexbg .right {
+          order: 3;
+        }
+      }
+      /* 모바일 화면 */
+      @media screen and (max-width: 480px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 100%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .flexbg .right {
+          order: 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic
+          iste doloribus pariatur repellat non dignissimos nostrum nobis
+          accusamus nulla illo repudiandae dolore cumque, officia est
+          perspiciatis aliquid vitae molestiae. Architecto provident dolorem
+          nulla numquam laboriosam placeat ipsam repellendus nihil magni
+          voluptatem sed consequatur totam voluptatum perspiciatis, at, aliquam,
+          sit repellat exercitationem expedita blanditiis! Ratione eos quidem
+          corporis ullam? Placeat nulla consequuntur quidem aut quo? Cum iste
+          velit consequatur ea exercitationem perferendis, ipsam sed dolorem
+          neque optio iusto. Laborum soluta praesentium obcaecati dolorum et
+          nesciunt, ad debitis dolore asperiores provident, pariatur fugit quas
+          quis sint doloremque, in accusantium odio. Asperiores?
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+          corporis dicta maiores dolor, velit a. Modi id aliquid possimus minus
+          assumenda commodi inventore mollitia culpa, veritatis officiis
+          voluptatem sequi, recusandae vel quis, provident perferendis
+          reprehenderit quisquam aperiam ea aut eius cumque laudantium
+          reiciendis nostrum? Quod eligendi quae aperiam voluptatibus culpa,
+          iusto quas nulla soluta quasi? Quam distinctio ut rerum beatae omnis
+          laudantium autem perferendis doloribus dicta voluptates sequi, minus
+          voluptatem sapiente quia quisquam magnam inventore sit rem esse ex
+          nihil quidem qui mollitia! Sunt, impedit nam dicta consequuntur harum
+          quisquam eos quasi. Nesciunt soluta id quisquam quam asperiores.
+          Recusandae, nulla!
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>
+          You might here some latest posts here on left
+        </p>
+      </aside>
+      <aside class="sidebar right">
+        <p>
+          You might here some latest posts here on right
+        </p>
+      </aside>
+    </div>
+  </body>
+</html>
